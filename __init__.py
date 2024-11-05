@@ -1,3 +1,13 @@
+bl_info = {
+    "name": "Virual Lighting Environment",
+    "author": "Daniel W",
+    "version": (0, 1),
+    "blender": (4, 10, 0),
+    "location": "3D View > Sidebar > Virual Lighting Environment",
+    "description": "Visualize stage lighting in a 3D space; Works with Qlab",
+    "category": "3D View"
+}
+
 import bpy
 from bpy.types import Panel, Operator, PropertyGroup, FloatProperty, PointerProperty, StringProperty
 import time
