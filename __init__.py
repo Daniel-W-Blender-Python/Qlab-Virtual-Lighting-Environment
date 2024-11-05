@@ -1,5 +1,5 @@
 bl_info = {
-    "name": "Virual Lighting Environment",
+    "name": "Qlab Virtual Lighting Environment",
     "author": "Daniel W",
     "version": (0, 1),
     "blender": (4, 10, 0),
@@ -720,11 +720,10 @@ class ExportLights(bpy.types.Operator):
     """ExportLights"""
     bl_idname = "object.export_lights"
     bl_label = "Export Lights"
-    
-    context = bpy.context
-    scene = context.scene
 
     def execute(self, context): 
+        context = bpy.context
+        scene = context.scene
         export_lights()
         return {'FINISHED'}
 
