@@ -732,9 +732,6 @@ class ChangeColor(bpy.types.Operator):
     """ChangeColor"""
     bl_idname = "object.change_color"
     bl_label = "Change Light Color"
-    
-    context = bpy.context
-    scene = context.scene
 
     def execute(self, context):  
         context = bpy.context
@@ -748,11 +745,10 @@ class OpenFrontCurtain(bpy.types.Operator):
     """OpenFrontCurtian"""
     bl_idname = "object.open_front_curtian"
     bl_label = "Open Front Curtain"
-    
-    context = bpy.context
-    scene = context.scene
 
     def execute(self, context): 
+        context = bpy.context
+        scene = context.scene
         open_front_curtain()
         return {'FINISHED'}
     
@@ -760,11 +756,10 @@ class CloseFrontCurtain(bpy.types.Operator):
     """CloseFrontCurtian"""
     bl_idname = "object.close_front_curtian"
     bl_label = "Close Front Curtain"
-    
-    context = bpy.context
-    scene = context.scene
 
     def execute(self, context): 
+        context = bpy.context
+        scene = context.scene
         close_front_curtain()
         return {'FINISHED'}
     
@@ -772,11 +767,10 @@ class OpenMiddleCurtain(bpy.types.Operator):
     """OpenMiddleCurtian"""
     bl_idname = "object.open_middle_curtian"
     bl_label = "Open Middle Curtain"
-    
-    context = bpy.context
-    scene = context.scene
 
     def execute(self, context): 
+        context = bpy.context
+        scene = context.scene
         open_middle_curtain()
         return {'FINISHED'}
     
@@ -784,11 +778,10 @@ class CloseMiddleCurtain(bpy.types.Operator):
     """CloseMiddleCurtian"""
     bl_idname = "object.close_middle_curtian"
     bl_label = "Close Middle Curtain"
-    
-    context = bpy.context
-    scene = context.scene
 
     def execute(self, context): 
+        context = bpy.context
+        scene = context.scene
         close_middle_curtain()
         return {'FINISHED'}
     
@@ -797,11 +790,10 @@ class OpenBackCurtain(bpy.types.Operator):
     """OpenBackCurtian"""
     bl_idname = "object.open_back_curtian"
     bl_label = "Open Back Curtain"
-    
-    context = bpy.context
-    scene = context.scene
 
     def execute(self, context): 
+        context = bpy.context
+        scene = context.scene
         open_back_curtain()
         return {'FINISHED'}
     
@@ -809,35 +801,21 @@ class CloseBackCurtain(bpy.types.Operator):
     """CloseBackCurtian"""
     bl_idname = "object.close_back_curtian"
     bl_label = "Close Back Curtain"
-    
-    context = bpy.context
-    scene = context.scene
 
     def execute(self, context): 
+        context = bpy.context
+        scene = context.scene
         close_back_curtain()
         return {'FINISHED'}
-"""    
-class Movers(bpy.types.Operator):
-    bl_idname = "object.movers"
-    bl_label = "Change Mover Position"
-    
-    context = bpy.context
-    scene = context.scene
 
-    def execute(self, context): 
-        change_mover_position()
-        return {'FINISHED'}
-    """
-    
 class MoversIntensity(bpy.types.Operator):
     """MoversIntensity"""
     bl_idname = "object.movers_intensity"
     bl_label = "Change Mover Intensity"
-    
-    context = bpy.context
-    scene = context.scene
 
     def execute(self, context): 
+        context = bpy.context
+        scene = context.scene
         mover_intensity()
         return {'FINISHED'}
     
@@ -845,11 +823,10 @@ class MoversZoom(bpy.types.Operator):
     """MoversZoom"""
     bl_idname = "object.movers_zoom"
     bl_label = "Change Mover Zoom"
-    
-    context = bpy.context
-    scene = context.scene
 
     def execute(self, context): 
+        context = bpy.context
+        scene = context.scene
         mover_zoom()
         return {'FINISHED'}
     
@@ -857,11 +834,10 @@ class MoversPosition(bpy.types.Operator):
     """MoversPosition"""
     bl_idname = "object.movers_position"
     bl_label = "Change Mover Position"
-    
-    context = bpy.context
-    scene = context.scene
 
     def execute(self, context): 
+        context = bpy.context
+        scene = context.scene
         mover_position()
         return {'FINISHED'}
 
