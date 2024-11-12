@@ -547,7 +547,7 @@ def mover_position():
             circle.location = (0, 2.7, 0.7)
             pan_25 = 44.34
             tilt_25 = 26.00
-        if selected_mover.name == "Spot 26":
+        if selected_mover.name == "26":
             circle.location = (0, 2.7, 0.7)
             pan_26 = 54.83
             tilt_26 = 26.00
