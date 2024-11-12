@@ -645,14 +645,6 @@ def export_lights():
     
     outfile.write(data)
     
-    bpy.ops.object.select_all(action='DESELECT')
-    
-    for frames in range(bpy.data.scenes[0].frame_end):
-        for fc in scene.objects['25'].animation_data.action.fcurves:
-            scene.objects['25'].keyframe_delete(data_path=fc.data_path, frame=frames)
-        for fc in scene.objects['26'].animation_data.action.fcurves:
-            scene.objects['26'].keyframe_delete(data_path=fc.data_path, frame=frames)
-    
     
 
 class Settings(PropertyGroup):
